@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: vpn-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python vpn_bot/bot.py
