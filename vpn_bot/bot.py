@@ -1,3 +1,8 @@
+import sys
+if sys.version_info >= (3, 11):
+    import typing
+    typing.Union = typing.Union  # fix for python-telegram-bot
+
 import logging
 import sqlite3
 import json
