@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vpn-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        value: 8415084076:AAFUuWgyOGXK3aFv5zp9ILwMRKSdcV8TtYI
