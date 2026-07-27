@@ -5,3 +5,8 @@ services:
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python vpn_bot/bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8415084076:AAFUuWgyOGXK3aFv5zp9ILwMRKSdcV8TtYI
+      - key: PYTHON_VERSION
+        value: 3.10.12
